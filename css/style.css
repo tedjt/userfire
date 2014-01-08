@@ -549,10 +549,20 @@ header {
   -webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
-input.buy {
-	margin-bottom: 0px!important;
-	margin-top: 20px;
-	display: inline-block;
+
+.buymessagebox {
+	-moz-transition: max-height 4s;
+  -webkit-transition: max-height 4s;
+  -o-transition: max-height 4s;
+  transition: max-height 4s;
+  overflow: hidden;
+}
+
+.buymessagebox-hidden {
+	max-height: 0px;
+}
+.buymessagebox-shown {
+	max-height: 5000px;
 }
 
 /* ---------------------------------------------------------------------- */

@@ -53,7 +53,7 @@ jQuery(document).ready(function(){
 		$('.js-buybutton')
 			.click(function(e) {
 				$('.js-buybutton').parent().fadeOut(1000, function() {
-					$('.buttons-area').html(contactsCompleteHtml);
+					$('.buttons-area').html(contactsCompleteHtml).show();
 				});
 				var emailVal = $('.js-buyemail').val();
 				_postContact({
@@ -64,9 +64,9 @@ jQuery(document).ready(function(){
 			})
 			.text('Submit');
 
-		$('.js-buyemail')
-			.removeAttr('style')
-			.addClass('slideInRight');
+		$('.buymessagebox')
+			.removeClass('buymessagebox-hidden')
+			.addClass('buymessagebox-shown');
 
     return false;
 	}
