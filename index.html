@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<title>Userfire</title>
+	<title>UserFire</title>
 	
 	<!-- Meta Tags-->
     <meta charset="utf-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Userfire.co">
+    <meta name="author" content="UserFire.co">
 	<!-- End Meta Tags-->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -38,7 +38,7 @@
 			<div class="row-fluid">
 				<!-- Logo -->
 				<div class="logo">
-					<h1><a href="#">Userfire</a></h1> 
+					<h1><a href="#">UserFire</a></h1> 
 				</div>
 				<!-- End Logo -->
 			</div>
@@ -68,11 +68,11 @@
 
 				<!-- Download / Sign Up Form -->
 				<div class="span4">
-					<form method="post" action="mail.php" name="form-area" id="form-area"  class="form-area">
+					<form method="post" name="form-area" id="form-area"  class="form-area">
 						<h1>Get your <strong>free trial</strong></h1>
 						<p>Signup for access to the SDK.</p>
-						<input type="text" id="name" name="name" placeholder="Enter your name">
-						<input type="text" id="email" name="email" placeholder="Enter your Email">		
+						<input class='js-trialname' type="text" id="name" name="name" placeholder="Enter your name">
+						<input class= 'js-trialemail' type="text" id="email" name="email" placeholder="Enter your Email">		
 						<input type="submit" name="submit" value="Download">
 						<div class="form-area-bottom">&nbsp;</div>
 					</form>
@@ -92,7 +92,7 @@
 			<!-- Headline -->
 			<div class="headline">
 				<h1> Start getting new users today </h1>
-				<h2> Userfire is the easiest way to drive application installs.</h2>
+				<h2> UserFire is the easiest way to drive application installs.</h2>
 			</div>	
 			<!-- End Headline -->
 			
@@ -106,7 +106,7 @@
 						<!-- Start Feature -->
 						<div class="span6 left-icon">
 							<img src="img/icons/diary.png" alt="" title="" />
-							<h4>One integration to drive installs across multiple networks</h4>
+							<h4>One integration</h4>
 							<p>We integrated with Facebook, Twitter, Pinterest, Google+, Email and SMS so you don't have to. Let your users share your application and it's content on whatever network they choose.</p>
 						</div>
 						<!-- End Feature -->
@@ -114,7 +114,7 @@
 						<!-- Start Feature -->
 						<div class="span6 left-icon">
 							<img src="img/icons/calendar.png" alt="" title="" />
-							<h4>Turn any content into your app into a social lead</h4>
+							<h4>Make your content a social lead</h4>
 							<p>
 								Whether your app contains images, products, articles, virtual good, games or anything else -- UserFire turns them into social content that drives users into your app. 
 							</p>
@@ -127,8 +127,8 @@
 						<!-- Start Feature -->
 						<div class="span6 left-icon">
 							<img src="img/icons/photos.png" alt="" title="" />
-							<h4>Identify your best users and the best users they know</h4>
-							<p>Some of your users are more valuable than others. We look at installed apps, social graph analysis, application activity, purchase history, location and other signals to help your users find the best contacts to share with.</p>
+							<h4>Identify the best users</h4>
+							<p>We look at installed apps, social graph analysis, activity, purchase history, location and other signals to help your users find the best contacts to share with.</p>
 						</div>
 						<!-- Start Feature -->
 						
@@ -146,7 +146,7 @@
 						<div class="span6 left-icon">
 							<img src="img/icons/clock.png" alt="" title="" />
 							<h4>5 minute integration</h4>
-							<p>Make one call to initiate a referral and we take care of the rest - tracking new users through the install funnel. If you need more customization we've got you covered with a configurable UI, custom event tracking and webhooks keep your service up to date.</p>
+							<p>One call and we take care of the rest. If you need more customization we've got you covered with a configurable UI, custom event tracking and webhooks.</p>
 						</div>
 						<!-- Start Feature -->
 						
@@ -154,7 +154,7 @@
 						<div class="span6 left-icon">
 							<img src="img/icons/box.png" alt="" title="" />
 							<h4>Set it and forget it.</h4>
-							<p>UserFire doesn't need constant maintenance, because the <em>users</em> create the <em>benefits</p>
+							<p>UserFire doesn't need constant maintenance, because the <em>users</em> create the <em>benefits</em></p>
 						</div>
 						<!-- Start Feature -->
 					</div>	
@@ -183,21 +183,21 @@
 				
 				<!-- Testimonials -->
 				<div class="span4">
-					<div id="testimonials" >
+					<div id="testimonials">
 						<ul class="slides">
 							<li>
 								<img src="img/placeholder/author-img.png" alt="" title=""/>
-								<p>Facilis explicari nec molestie. Voluptua forensibus at quo in eros conclusionemque.</p>
-								<span class="author"><strong>Jessie Karter</strong> - White Hat Marketing</span>
+								<p>WOW! that was so easy to setup.</p>
+								<span class="author"><strong>Ray Ceras</strong> - MediQuize</span>
 							</li>
-							<li>
+							<li class='hide'>
 								<img src="img/placeholder/author-img.png" alt="" title=""/>
-								<p>Molestie in, voluptua forensibus at quo, in eros in duo eros qusat ante at feugiat tincidunt.</p>
-								<span class="author"><strong>Anabelle Volburt</strong>- Ana Spiritual Healer</span>
+								<p>I was suprised to see how much better referrals were than Facebook Ads for our app.</p>
+								<span class="author"><strong>Anabelle Volburt</strong>- YogaMix</span>
 							</li>
-							<li>
+							<li class='hide'>
 								<img src="img/placeholder/author-img.png" alt="" title=""/>
-								<p>Explicari ea nec. Molestie in, voluptua forensibus at quo, in eros qusat conclusionemque.</p>
+								<p>Some other glowing text</p>
 								<span class="author"><strong>Obrian Bareth</strong>- SEO linkers</span>
 							</li>
 						</ul>
@@ -216,27 +216,18 @@
 		<div class="wrapper">
 		
 			<div class="row-fluid">
-				<!-- Thumbnails -->
-				<ul class="thumbnails">
-					<li class="span2"><a href="img/placeholder/screenshot2.png" class="thumbnail fancybox"><img src="img/placeholder/screenshot1.png" alt="" title="" /></a></li>
-					<li class="span2"><a href="img/placeholder/screenshot2.png" class="thumbnail fancybox"><img src="img/placeholder/screenshot1.png" alt="" title="" /></a></li>
-					<li class="span2"><a href="img/placeholder/screenshot2.png" class="thumbnail fancybox"><img src="img/placeholder/screenshot1.png" alt="" title="" /></a></li>
-					<li class="span2"><a href="img/placeholder/screenshot2.png" class="thumbnail fancybox"><img src="img/placeholder/screenshot1.png" alt="" title="" /></a></li>
-					<li class="span2"><a href="img/placeholder/screenshot2.png" class="thumbnail fancybox"><img src="img/placeholder/screenshot1.png" alt="" title="" /></a></li>
-					<li class="span2"><a href="img/placeholder/screenshot2.png" class="thumbnail fancybox"><img src="img/placeholder/screenshot1.png" alt="" title="" /></a></li>
-				</ul>
-				<!-- End Thumbnails -->
-
 				<!-- Start Headline -->
 				<div class="headline">
-					<h1>Don't waste any more time! Get your product NOW</h1>
+					<h1>Don't waste any more time! Find the right pacakge for you NOW.</h1>
 					<h2 class="center">We have designed special packages to fit the needs of everyone.</h2>
 				</div>
 				<!-- End Headline -->
 				
 				<!-- Start Buttons -->
 				<div class="buttons-area">
-					 <button class="large-button yellow-btn" type="button">Buy Now</button>
+					 <button class="large-button yellow-btn js-buybutton" type="button">Buy Now</button> 
+					 <br/>
+					 <input class='js-buyemail buy span4' type="text" name="bottom-buy-email" placeholder="Email" style='opacity: 0;'>
 				</div>
 				<!-- End Buttons -->
 				
@@ -255,18 +246,18 @@
 			
 				<!-- Start About Text -->
 				<div class="span4 boxed">
-					<h2>About LeadGen</h2>
-					<p>LeadGen is a classical, innovative &amp; fully functional landing page with an improved way to convert leads into sales. It can be used for for nearly all purposes : <strong>Internet marketing</strong>, <strong>Product Launch</strong>, <strong>Optin page</strong>, and so on.</p>
-					<p>It can easily be adapted and customized. Increase your sales today! Get it NOW</p>
+					<h2>About UserFire</h2>
+					<p>UserFire is a drop-in, intelligent &amp; fully functional mobile referral platform. Only pay for <strong> new app installs </strong> and get deep <strong>User insights</strong> for your <strong>mobile app.</strong></p>
+					<p>It can easily be adapted and customized. Increase your app installs today! Get it NOW</p>
 				</div>
 				<!-- End About Text -->
 				
 				<!-- Start Subscribe Form -->
 				<div class="span4 boxed">
 					<h2>Subscribe Now</h2>
-					<p>Join our newsletter for exclusive deals. Lorem ipsum dolor sit amet tempor, consectetur adipisicing elit, </p>
-					<form method="post" action="form.php" name="bottom-subscribe" id="buttom-subscribe">
-						<input type="text" name="bottom-subscribe-email" placeholder="Email">		
+					<p>Join our newsletter for tips and tricks on driving mobile app installs. </p>
+					<form method="post" name="bottom-subscribe" id="buttom-subscribe">
+						<input class='js-subscribeemail' type="text" name="bottom-subscribe-email" placeholder="Email">		
 						<input type="submit" name="submit" value="Subscribe">
 					</form>
 				</div>
@@ -276,10 +267,10 @@
 				<div class="span4 boxed">
 					<h2>Get in Touch</h2>
 					<ul class="contact-details">
-						<li class="home">Creative Avenue, Mauritius</li>
+						<li class="home">973 Ilima Way</li>
 						<li class="phone">+00 (230) 918 3278</li>
 						<li class="mail"><a href="maito:contact@simplesphere.net">contact@simplesphere.net</a></li>
-						<li class="star"><a href="http://www.simplesphere.net">www.simplesphere.net</a></li>
+						<li class="star"><a href="http://www.UserFire.co">wwww.UserFire.co</a></li>
 					</ul>
 					
 					<!-- Social Icons -->
@@ -287,7 +278,6 @@
 						<ul>
 							<li class="twitter"><a href="#" title="Follow us on Twitter">twitter</a></li>
 							 <li class="facebook"><a href="#" title="Find us on Facebook">facebook</a></li>
-							 <li class="dribbble"><a href="#" title="Dribble">dribbble</a></li>
 							 <li class="googleplus"><a href="#" title="Googleplus">googleplus</a></li>
 							 <li class="linkedin"><a href="#" title="LinkedIn">linkedin</a></li>
 						</ul>
@@ -307,7 +297,7 @@
 		<div class="footer-bottom">	
 			<div class="wrapper">		
 				<div class="row-fluid">
-						<p>Copyright © 2013 <a href="http://www.simplesphere.net" title="LeadGen">LeadGen</a> | Designed by <a href="http://www.simplesphere.net">Simplesphere</a></p>
+						<p>Copyright © 2013 <a href="http://www.UserFire.co" title="UserFire">UserFire</a> </p>
 				</div>
 			</div>
 		</div>
@@ -327,6 +317,7 @@
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/parse-1.2.16.min.js"></script>
 
   </body>
 </html>
