@@ -38,6 +38,7 @@ jQuery(document).ready(function(){
 	};
 
 	function freeTrial() {
+		ga('send', 'event', 'button', 'click', 'TrialComplete');
 		var nameVal = $('.js-trialname').val();
 		var emailVal = $('.js-trialemail').val();
 		_postContact({
@@ -50,8 +51,10 @@ jQuery(document).ready(function(){
 	}
 
 	function buyNow(e) {
+		ga('send', 'event', 'button', 'click', 'BuyClick');
 		$('.js-buybutton')
 			.click(function(e) {
+				ga('send', 'event', 'button', 'click', 'BuyComplete');
 				$('.js-buybutton').parent().fadeOut(1000, function() {
 					$('.buttons-area').html(contactsCompleteHtml).show();
 				});
@@ -72,6 +75,7 @@ jQuery(document).ready(function(){
 	}
 
 	function subscribe() {
+		ga('send', 'event', 'button', 'click', 'SubscribeComplete');
 		var emailVal = $('.js-subscribeemail').val();
 		_postContact({
 			source: SOURCE_TYPE.SUBSCRIBE,

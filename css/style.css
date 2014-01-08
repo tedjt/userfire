@@ -315,6 +315,18 @@ header {
 		margin-bottom: 10px;
 	}
 
+	#testimonials img {
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		border: solid 3px #FFF;
+		display: inline-block;
+		-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25);
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25);
+  }
+
 	.author {	
 		clear: both;
 		display: block;
